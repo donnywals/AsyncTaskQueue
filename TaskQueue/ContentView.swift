@@ -12,7 +12,7 @@ struct ContentView: View {
     @State var numberOfTasks = 0.0
     
     var body: some View {
-        Slider(value: $numberOfTasks, in: 0.0...1000.0, step: 1.0, label: {
+        Slider(value: $numberOfTasks, in: 0.0...50.0, step: 1.0, label: {
             Text("Number of tasks to add")
         })
         
