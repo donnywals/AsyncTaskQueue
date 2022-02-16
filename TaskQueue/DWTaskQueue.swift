@@ -10,7 +10,7 @@ import Combine
 
 typealias TaskProducer = () -> Task<Void, Never>
 
-actor TaskQueue {
+actor DWTaskQueue {
     private var taskProducers = [TaskProducer]()
     private var isProcessingTasks = false
     
